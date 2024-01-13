@@ -29,4 +29,13 @@ body {
     width: 250px;
     height: 100vh;
     background-color: green;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+}
+.sidebar-item{
+    text-decoration: none;
+    color: white;
 }
