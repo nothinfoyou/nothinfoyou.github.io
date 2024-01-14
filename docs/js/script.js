@@ -1,29 +1,13 @@
-const hamburger = document.getElementById('hamburger')
-const sidebar = document.getElementById('sidebar')
-const overlay = document.getElementById('overlay')
-
-let menuOpen = false
-
-function openMenu() {
-  menuOpen = true
-  overlay.style.display = 'block'
-  sidebar.style.width = '250px'
-}
-
-function closeMenu() {
-  menuOpen = false
-  overlay.style.display = 'none'
-  sidebar.style.width = '0px'
-}
-
-hamburger.addEventListener('click', function () {
-  if (!menuOpen) {
-    openMenu()
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("header").style.marginLeft = "250px";
   }
-})
-
-overlay.addEventListener('click', function () {
-  if (menuOpen) {
-    closeMenu()
+  
+  /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+    document.getElementById("header").style.marginLeft = "0";
+   
   }
-})
