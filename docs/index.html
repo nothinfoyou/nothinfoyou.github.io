@@ -6,39 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marshall Academics</title>
     <link href="css/styles.css" rel="stylesheet" />
-    <script src="script.js"></script>
+
 </head>
-<header>
+<header id="header">
     <h1>Marshall Academics</h1>
 </header>
 
 <body>
-    <main>
-        <svg
-        xmlns="http://www.w3.org/2000/svg"
-        height="24"
-        viewBox="0 0 24 24"
-        width="24"
-        id="hamburger"
-      >
-        <path d="M0 0h24v24H0z" fill="none" />
-        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
-      </svg>
-        <div id="sidebar" class="sidebar">
-            <a href="" class="sidebar-item">
-                <div>Home</div>
-            </a>
-            <a href="" class="sidebar-item">
-                <div>About</div>
-            </a>
-            <a href="" class="sidebar-item">
-                <div>Academics</div>
-            </a>
-        </div>
-    </main>
-</body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="#">Academics</a>
+      </div>
+      
+      <!-- Use any element to open the sidenav -->
+      
+      <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+      <div id="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <h2>Content...</h2>
+      </div>
+  </body>
 <footer>
-
+    <script src="js/script.js"></script>
 </footer>
 
 </html>
