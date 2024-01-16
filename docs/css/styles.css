@@ -80,4 +80,8 @@ main {
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+<<<<<<< HEAD
   }
+=======
+  }
+>>>>>>> ca0bad1d8e773ee6daab994db8829732d82974bd
