@@ -85,3 +85,13 @@ main {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
+
+.dropdown-container{
+  display: none;
+  background-color: green;
+  padding-left: 8px;
+}
+.dropdown-list{
+  float: right;
+  padding-right: 8px;
+}
