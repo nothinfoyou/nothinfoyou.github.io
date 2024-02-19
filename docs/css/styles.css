@@ -1,21 +1,23 @@
-:root{
-    font-family: Arial, Helvetica, sans-serif;
+:root {
+  font-family: Arial, Helvetica, sans-serif;
 }
-header{
-    background-color: green;
-    padding: 25px;
-    background-size: cover;
-    display: flex;
-    color: white;
-    border-bottom: solid black;
+
+header {
+  background-color: green;
+  padding: 25px;
+  background-size: cover;
+  display: flex;
+  color: white;
+  border-bottom: solid black;
 
 }
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: white;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
 
 
 main {
@@ -25,73 +27,96 @@ main {
 }
 
 .sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    color: white;
-    background-color: black; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-    border-right: solid black;
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
+  left: 0;
+  color: white;
+  background-color: black;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
+  border-right: solid black;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #818181;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+#header {
+  transition: margin-left .5s;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: green;
+  color: white;
+  padding: 10px 15px;
+  border: solid black;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
   }
-  
-  /* The navigation menu links */
+
   .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #f1f1f1;
-    display: block;
-    transition: 0.3s;
+    font-size: 18px;
   }
-  
-  /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
-        color: #818181;
-  }
-  
-  /* Position and style the close button (top right corner) */
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+}
 
-  }
-  
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-  #main {
-    transition: margin-left .5s;
-    padding: 20px;
-  }
-  #header{
-    transition: margin-left .5s;
-  }
-  .openbtn {
-    font-size: 20px;
-    cursor: pointer;
-    background-color: green;
-    color: white;
-    padding: 10px 15px;
-    border: solid black;
-  }
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
+.sidenav a,
+.dropdown-btn {
+  display: block;
+}
 
-.dropdown-container{
+.dropdown-container {
   display: none;
   background-color: green;
   padding-left: 8px;
 }
-.dropdown-list{
+
+.dropdown-list {
   float: right;
   padding-right: 8px;
 }
