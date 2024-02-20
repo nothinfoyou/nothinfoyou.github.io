@@ -38,6 +38,7 @@ main {
   overflow-x: hidden;
   padding-top: 60px;
   transition: 0.5s;
+
   /* border-right: solid black; */
 }
 
@@ -48,6 +49,7 @@ main {
   color: #f1f1f1;
   display: block;
   transition: 0.3s;
+
 }
 
 .sidenav a:hover {
@@ -110,7 +112,7 @@ main {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 20px;
-  color: #818181;
+  color: #f1f1f1;
   display: block;
   border: none;
   background: none;
@@ -121,7 +123,7 @@ main {
 }
 
 .sidenav a:hover, .dropdown-btn:hover {
-  color: #f1f1f1;
+  color: #818181;
 }
 
 .dropdown-container {
@@ -133,4 +135,10 @@ main {
 .dropdown-list {
   float: right;
   padding-right: 8px;
+}
+
+.spacer{
+  height: 100px;
+  position: absolute;
+  color: black;
 }

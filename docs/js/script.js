@@ -1,8 +1,8 @@
 
 function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-    document.getElementById("header").style.marginLeft = "250px";
+    document.getElementById("mySidenav").style.width = "300px";
+    document.getElementById("main").style.marginLeft = "300px";
+    document.getElementById("header").style.marginLeft = "300px";
   }
   
   /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
@@ -21,6 +21,7 @@ function openNav() {
       var dropdownContent = this.nextElementSibling;
       if (dropdownContent.style.display == "block"){
         dropdownContent.style.display = "none";
+
       } else {
         dropdownContent.style.display = "block";
       }
