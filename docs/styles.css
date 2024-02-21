@@ -142,3 +142,6 @@ main {
   position: absolute;
   color: black;
 }
+.list{
+  text-decoration: none;
+}
