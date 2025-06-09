@@ -10926,6 +10926,10 @@ p.lead {
     display: block;
   }
 }
+.social-icons svg {
+  vertical-align: -0.125em;;
+}
+
 .social-icons .social-icon {
   display: inline-flex;
   align-items: center;
@@ -10938,15 +10942,17 @@ p.lead {
   font-size: 1.5rem;
   margin-right: 1.5rem;
 }
-.social-icons .social-icon:last-child {
+/* .social-icons .social-icon:last-child {
   margin-right: 0;
-}
+} */
 .social-icons .social-icon:hover {
   background-color: #bd5d38;
 }
 
 .dev-icons {
   font-size: 3rem;
+  vertical-align: -0.125em;;
+
 }
 
 section.resume-section {
